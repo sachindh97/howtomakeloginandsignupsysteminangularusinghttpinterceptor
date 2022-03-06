@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <p *ngIf="errmsgshow" class="text-danger mt-3 text-center">{{errmsg}}</p>
+    <div class="row">
+
+        <div class="col-lg-4 mt-2 mb-2" *ngFor="let d of data">
+            <div class="box">
+                <h4 class="mt-1 mb-3"><b>{{d.name}}</b></h4>
+                <p>{{d.description}}</p>
+            </div>
+           
+        </div>
+
+    </div>
+
+</div>
